@@ -24,7 +24,7 @@ export const heroes = [
         'characters':'Jay Garrick, Barry Allen, Wally West, Bart Allen'
     },
     {
-        'id': 'dc-green',
+        'id': 'dc-green-lantern',
         'superhero':'Green Lantern', 
         'publisher':'DC Comics', 
         'alter_ego':'Alan Scott',

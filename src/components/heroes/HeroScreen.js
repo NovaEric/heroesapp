@@ -7,7 +7,6 @@ import { getHeroById } from '../../selectors/getHeroById';
 // const heroImages = require.context('../../assets/heroes', true );
 
 
-
 export const HeroScreen = ({ history }) => {
 
     const { heroeId } = useParams();
@@ -39,11 +38,11 @@ export const HeroScreen = ({ history }) => {
     
     return (
         <div className="row mt-5">
-            <div className="col-4">
+            <div className="col-4 ">
                 <img 
                     // src={ `../assets/heroes/${ heroeId }.jpg` } // desde public/assets
                     // src={ batman } // import
-                    src={ heroImages(`./${ heroeId }.jpg`) }
+                    src={ heroImages( heroeId ) }
                     alt={ superhero }
                     className="img-thumbnail animate__animated animate__fadeInLeft"
                 />

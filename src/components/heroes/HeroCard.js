@@ -12,12 +12,12 @@ export const HeroCard = ({
 }) => {
 
     return (
-        <div className="card ms-3 animate__animated animate__fadeIn" style={ { maxWidth: 540 } }>
+        <div className="card ms-3 animate__animated animate__fadeIn" >
             <div className="row no-gutters">
-                <div className="col-md-4">
-                    <img src={ heroImages(`./${ id }.jpg`) } className="card-img" alt={ superhero } />
+                <div className="col-8">
+                    <img src={ heroImages(id) } className="card-img h-100" alt={ superhero } />
                 </div>
-                <div className="col-md-8">
+                <div className="col-4 col-sm-4">
                     
                     <div className="card-body">
                         <h5 className="card-title"> { superhero } </h5>
